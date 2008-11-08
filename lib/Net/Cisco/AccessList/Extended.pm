@@ -5,7 +5,9 @@ use base qw(Class::Accessor::Fast);
 
 use strict;
 use warnings FATAL => 'all';
-our $VERSION = 0.03;
+
+our $VERSION = '1.01';
+$VERSION = eval $VERSION; # numify for warning-free dev releases
 
 use List::MoreUtils qw(any);
 use Carp;
@@ -140,7 +142,7 @@ Net::Cisco::AccessList::Extended - Generate Cisco extended access-lists
 
 =head1 VERSION
 
-This document refers to version 0.03 of Net::Cisco::AccessList::Extended.
+This document refers to version 1.01 of Net::Cisco::AccessList::Extended.
 
 =head1 SYNOPSIS
 
@@ -316,19 +318,10 @@ Oliver Gorwits C<< <oliver.gorwits@oucs.ox.ac.uk> >>
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright (c) The University of Oxford 2006. All Rights Reserved.
+Copyright (c) The University of Oxford 2008.
 
-This program is free software; you can redistribute it and/or modify it under
-the terms of version 2 of the GNU General Public License as published by the
-Free Software Foundation.
-
-This program is distributed in the hope that it will be useful, but WITHOUT
-ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with
-this program; if not, write to the Free Software Foundation, Inc., 51 Franklin
-St, Fifth Floor, Boston, MA 02110-1301 USA
+This library is free software; you can redistribute it and/or modify it under
+the same terms as Perl itself.
 
 =cut
 
